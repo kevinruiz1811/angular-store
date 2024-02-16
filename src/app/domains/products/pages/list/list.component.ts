@@ -1,5 +1,5 @@
 import { Component, Input, SimpleChanges, inject, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { ProductComponent } from '../../components/product/product.component';
 import { Product } from '@shared/models/product.model';
 import { HeaderComponent } from '@shared/components/header/header.component';
@@ -15,9 +15,8 @@ import { RouterLinkWithHref } from '@angular/router';
   imports: [
     ProductComponent,
     HeaderComponent,
-    CommonModule,
-    RouterLinkWithHref,
-  ],
+    RouterLinkWithHref
+],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css',
 })
